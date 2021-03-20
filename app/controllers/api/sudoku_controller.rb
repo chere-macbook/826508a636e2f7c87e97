@@ -5,6 +5,6 @@ class Api::SudokuController < ApplicationController
     @puzzle = SudokuPuzzle.new(params[:data])
     @puzzle.solution
 
-    render json: @puzzle.board.to_json
+    render json: { solution: @puzzle.board }.to_json
   end
 end
