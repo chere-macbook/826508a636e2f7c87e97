@@ -2,7 +2,7 @@
 
 Task: Create an API endpoint that allows a client to send in an array representing an unsolved Sudoku puzzle, and responds with the solved puzzle.
 
-The goal of Sudoku is to fill in a 9×9 grid with digits so that each column, row, and 3×3 section contain the numbers between 1 to 9. At the beginning of the game, the 9×9 grid will have some of the squares filled in. Your job is to use logic to fill in the missing digits and complete the grid. 
+The goal of Sudoku is to fill in a 9×9 grid with digits so that each column, row, and 3×3 section contain the numbers between 1 to 9. At the beginning of the game, the 9×9 grid will have some of the squares filled in. Your job is to use logic to fill in the missing digits and complete the grid.
 Constraints:
 
 Any row cannot contain more than one of the same number from 1 to 9
@@ -29,17 +29,17 @@ POST /api/sudoku
 ```
 ```
 Output example:
-{ 
-solution: [
-      [2, 1, 5, 3, 7, 9, 8, 6, 4],
-      [9, 8, 6, 1, 2, 4, 3, 5, 7],
-      [7, 3, 4, 8, 5, 6, 2, 1, 9],
-      [4, 5, 2, 7, 8, 1, 6, 9, 3],
-      [8, 6, 9, 5, 4, 3, 1, 7, 2],
-      [3, 7, 1, 6, 9, 2, 4, 8, 5],
-      [5, 2, 7, 4, 1, 8, 9, 3, 6],
-      [6, 4, 8, 9, 3, 7, 5, 2, 1],
-      [1, 9, 3, 2, 6, 5, 7, 4, 8]
-    ]
+{
+  "solution":[
+    [2,1,5,3,6,9,8,7,4],
+    [5,8,1,6,2,4,3,9,7],
+    [7,3,2,8,5,6,4,1,9],
+    [4,5,3,7,8,1,9,6,2],
+    [8,6,9,5,4,7,1,2,3],
+    [3,7,4,1,9,2,6,8,5],
+    [9,2,7,4,1,8,5,3,6],
+    [6,4,8,9,7,3,2,5,1],
+    [1,9,6,2,3,5,7,4,8]
+  ]
 }
 ```

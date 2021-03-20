@@ -1,6 +1,4 @@
 class Api::SudokuController < ApplicationController
-  skip_before_action :verify_authenticity_token
-
   def create
     @puzzle = SudokuPuzzle.new(params[:data])
     @puzzle.solution
